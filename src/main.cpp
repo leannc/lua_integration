@@ -19,5 +19,10 @@ int main()
     lua.set_function("beep", [&x]{ ++x; });
     lua.script("beep()");
     assert(x == 1);
+
+
+    lua.open_libraries(sol::lib::base);
+
+    lua.script("print('bark bark bark!')");
     return 0;
 }
