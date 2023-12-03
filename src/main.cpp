@@ -9,21 +9,15 @@ extern "C" {
 #include <lualib.h>
 }
 
+#include <sol/sol.hpp>
+#include <cassert>
 
 int main()
 {
-    lua_State *L=luaL_newstate();
-    luaL_openlibs(L);
-
-    //调用执行lua脚本
-    int r= luaL_dofile(L,"scripts/test_1.lua");
-    if (r!=LUA_OK)
-    {
-        std::string err= lua_tostring(L,-1);
-        std::cout << err << std::endl;
-        return false;
-    }
-
-    std::cout << "Hello, World!" << std::endl;
+    sol::state lua;
+    int x = 0;
+    lua.set_function("beep", [&x]{ ++x; });
+    lua.script("beep()");
+    assert(x == 1);
     return 0;
 }

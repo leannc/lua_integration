@@ -8,5 +8,8 @@ add_subdirectory(3rdparty/lua546)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
 
-target_include_directories(${PROJECT_NAME} PRIVATE 3rdparty/lua546/lua-5.4.6/include)
+target_include_directories(${PROJECT_NAME} PRIVATE
+        3rdparty/lua546/lua-5.4.6/include
+        3rdparty/sol/include
+)
 target_link_libraries(${PROJECT_NAME} PRIVATE lua_static)
