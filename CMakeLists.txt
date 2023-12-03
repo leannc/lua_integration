@@ -8,8 +8,9 @@ add_subdirectory(3rdparty/lua546)
 
 add_executable(${PROJECT_NAME} src/main.cpp
         src/UseCases.h
-        src/step1-variables/load_variables_from_lua.cpp
+        src/step1-variables/1_load_variables_from_lua.cpp
         src/scripts/variables.lua
+        src/step1-variables/2_write_variables_to_lua.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE

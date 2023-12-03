@@ -11,6 +11,7 @@
 int load_variables_from_lua() {
 
     sol::state lua;
+    lua.open_libraries(sol::lib::base); ///没有这一句，脚本里面的print就不能用了
     lua.script_file("scripts/variables.lua");
 
     ///================= 基本操作

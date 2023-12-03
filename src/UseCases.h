@@ -5,3 +5,4 @@
 #pragma once
 
 int load_variables_from_lua();
+int write_variables_to_lua();
