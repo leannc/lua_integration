@@ -1,0 +1,3 @@
+[submodule "3rdparty/lua546"]
+	path = 3rdparty/lua546
+	url = git@github.com:walterschell/Lua.git
