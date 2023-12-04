@@ -20,3 +20,24 @@ target_include_directories(${PROJECT_NAME} PRIVATE
         3rdparty/sol/include
 )
 target_link_libraries(${PROJECT_NAME} PRIVATE lua_static)
+
+#####################文件夹自动拷贝###########################
+# 设置源文件目录
+set(SOURCE_DIR ${CMAKE_SOURCE_DIR}/src/scripts)
+
+# 设置目标目录
+set(BINARY_DIR ${CMAKE_BINARY_DIR}/scripts)
+
+# 拷贝整个文件夹
+file(COPY ${SOURCE_DIR}/ DESTINATION ${BINARY_DIR})
+
+# 添加自定义目标，用于每次构建时拷贝文件夹
+add_custom_target(ScriptFolder ALL
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${SOURCE_DIR}
+        ${BINARY_DIR}
+        DEPENDS ${${PROJECT_NAME}}
+        COMMENT "Copying config folder to binary directory"
+)
+# 将自定义目标添加到默认构建目标的依赖项中
+add_dependencies(${PROJECT_NAME} ScriptFolder)
