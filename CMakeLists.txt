@@ -23,6 +23,7 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/step4-ReferenceAndPointerOwnership/1_object_lifetime.cpp
         src/step4-ReferenceAndPointerOwnership/1_object_lifetime.cpp
         src/step4-ReferenceAndPointerOwnership/2_raw_pointer_lifetime.cpp
+        src/step5-safeScriptUsage/safe_script_usage.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE

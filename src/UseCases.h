@@ -19,3 +19,5 @@ int use_cpp_classes_in_lua();
 
 int object_lifetime();
 int raw_pointer_lifetime();
+
+int safe_script_usage();

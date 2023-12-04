@@ -36,7 +36,10 @@ int main()
 
 ///============object lifetime============
 //    CALL_USE_CASE(object_lifetime);
-    CALL_USE_CASE(raw_pointer_lifetime);
+//    CALL_USE_CASE(raw_pointer_lifetime);
+
+///============safe script usage============
+    CALL_USE_CASE(safe_script_usage);
 
 
 }
