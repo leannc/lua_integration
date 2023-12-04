@@ -15,6 +15,8 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/step2-functions/2_call_cpp_member_functions_in_lua.cpp
         src/step2-functions/3_call_cpp_template_functions_in_lua.cpp
         src/step2-functions/4_get_a_function_from_lua_in_cpp.cpp
+        src/step2-functions/5_multy_returns_from_lua_function.cpp
+        src/step2-functions/6_define_multy_return_functions_to_lua_function_in_cpp.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
