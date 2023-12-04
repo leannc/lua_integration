@@ -28,5 +28,6 @@ int main()
 //    CALL_USE_CASE(call_cpp_template_functions_in_lua);
 //    CALL_USE_CASE(get_a_function_from_lua_in_cpp);
 //    CALL_USE_CASE(multy_returns_from_lua_function);
-    CALL_USE_CASE(define_multy_return_functions_to_lua_function_in_cpp);
+//    CALL_USE_CASE(define_multy_return_functions_to_lua_function_in_cpp);
+    CALL_USE_CASE(return_any_type_to_and_from_lua);
 }
