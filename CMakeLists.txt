@@ -11,6 +11,8 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/step1-variables/1_load_variables_from_lua.cpp
         src/scripts/variables.lua
         src/step1-variables/2_write_variables_to_lua.cpp
+        src/step2-functions/1_call_cpp_functions_in_lua.cpp
+        src/step2-functions/2_call_cpp_member_functions_in_lua.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE

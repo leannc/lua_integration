@@ -18,6 +18,8 @@ void header(const std::string title)
 
 int main()
 {
-    CALL_USE_CASE(load_variables_from_lua);
+//    CALL_USE_CASE(load_variables_from_lua);
 //    CALL_USE_CASE(write_variables_to_lua);
+
+    CALL_USE_CASE(call_cpp_functions_in_lua);
 }
