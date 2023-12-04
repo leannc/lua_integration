@@ -4,8 +4,6 @@
 --- DateTime: 2023/12/4 11:31
 ---
 
-print(" in [LUA] ")
-
 --- 没有绑定对象的成员函数，需要把对象实例传入
 fiftieth_value = my_class_func_2(obj)
 print("in [LUA], fiftieth_value = ", fiftieth_value)

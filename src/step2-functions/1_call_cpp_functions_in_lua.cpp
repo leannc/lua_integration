@@ -35,7 +35,7 @@ int call_cpp_functions_in_lua()
 
     std::cout<<"some_str is "<<some_str<<std::endl;
 
-    ///让lua文件里面具有这个函数，并执行
+    ///===================== 在lua文件中执行
     lua.open_libraries(sol::lib::base);
     lua.script_file("scripts/call_cpp_function_from_lua.lua");
 

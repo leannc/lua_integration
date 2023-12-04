@@ -61,7 +61,7 @@ int call_cpp_member_functions_in_lua()
     std::cout<<"third_value is "<<third_value<<",fourth_value is "<<fourth_value<<std::endl;
 
 
-    ///在lua文件中执行
+    ///===================== 在lua文件中执行
     lua.open_libraries(sol::lib::base);
     lua.script_file("scripts/call_cpp_member_function_from_lua.lua");
 
