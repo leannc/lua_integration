@@ -18,6 +18,8 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/step2-functions/5_multy_returns_from_lua_function.cpp
         src/step2-functions/6_define_multy_return_functions_to_lua_function_in_cpp.cpp
         src/step2-functions/7_return_any_type_to_and_from_lua.cpp
+        "src/step3-UseCppClassesInLua/use_cpp_classes_in_lua.cpp"
+        "src/step3-UseCppClassesInLua/player.h"
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
