@@ -35,7 +35,8 @@ int main()
 //    CALL_USE_CASE(use_cpp_classes_in_lua);
 
 ///============object lifetime============
-    CALL_USE_CASE(object_lifetime);
+//    CALL_USE_CASE(object_lifetime);
+    CALL_USE_CASE(raw_pointer_lifetime);
 
 
 }
