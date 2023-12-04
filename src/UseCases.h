@@ -16,3 +16,5 @@ int define_multy_return_functions_to_lua_function_in_cpp();
 int return_any_type_to_and_from_lua();
 
 int use_cpp_classes_in_lua();
+
+int object_lifetime();

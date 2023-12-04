@@ -64,12 +64,14 @@ int write_variables_to_lua()
         return -1;
     }
 
-    ///删除bark3
+
+
+    ///=============================删除bark3
     lua["bark3"] = sol::lua_nil;
     sol::optional<int> y = lua["bark3"];
     // y will not have a value
     if (y) {
-        return -1;
+        std::cout << "bark3 still alive" << std::endl;
     }
     else {
         std::cout << "y has no value, as expected" << std::endl;

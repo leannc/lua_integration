@@ -32,7 +32,10 @@ int main()
 //    CALL_USE_CASE(return_any_type_to_and_from_lua);
 
 ///============classes============
-    CALL_USE_CASE(use_cpp_classes_in_lua);
+//    CALL_USE_CASE(use_cpp_classes_in_lua);
+
+///============object lifetime============
+    CALL_USE_CASE(object_lifetime);
 
 
 }

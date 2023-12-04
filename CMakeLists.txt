@@ -20,6 +20,8 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/step2-functions/7_return_any_type_to_and_from_lua.cpp
         "src/step3-UseCppClassesInLua/use_cpp_classes_in_lua.cpp"
         "src/step3-UseCppClassesInLua/player.h"
+        src/step4-ReferenceAndPointerOwnership/1_object_lifetime.cpp
+        src/step4-ReferenceAndPointerOwnership/1_object_lifetime.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
